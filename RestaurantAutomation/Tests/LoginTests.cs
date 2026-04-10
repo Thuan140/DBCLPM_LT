@@ -19,7 +19,7 @@ namespace RestaurantAutomation.Tests
 
         // ĐƯỜNG DẪN FILE - Hãy đảm bảo các đường dẫn này tồn tại trên máy bạn
         private string jsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TestData", "LoginData.json");
-        private string excelPath = @"C:\BaoDamChatLuongPM\LT\Testcase.xlsx";
+        private string excelPath = @"C:\bao dam chat luong phan mem _TH\TestCase_Quản lý quán ăn.xlsx";
 
         [SetUp]
         public void Setup()

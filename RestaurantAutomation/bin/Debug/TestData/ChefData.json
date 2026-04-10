@@ -1,0 +1,45 @@
+[
+  {
+    "TestCaseID": "TC_MANAGE_01",
+    "Username": "minhtri@gmail.com",
+    "Password": "123456",
+    "Action": "ViewOrderList",
+    "ExpectedResult": "Danh sách đơn hàng",
+    "SheetName": "Test Case (Đầu bếp)"
+  },
+  {
+    "TestCaseID": "TC_PROCESS_02",
+    "Username": "minhtri@gmail.com",
+    "Password": "123456",
+    "Action": "StartProcessingOrder",
+    "OrderCode": "DS-CN9GJ9",
+    "ExpectedResult": "Đang chế biến",
+    "SheetName": "Test Case (Đầu bếp)"
+  },
+  {
+    "TestCaseID": "TC_COOK_02",
+    "Username": "minhtri@gmail.com",
+    "Password": "123456",
+    "Action": "StartCookingDish",
+    "DishName": "Phở bò tái",
+    "ExpectedResult": "Đang chế biến",
+    "SheetName": "Test Case (Đầu bếp)"
+  },
+  {
+    "TestCaseID": "TC_COOK_03",
+    "Username": "minhtri@gmail.com",
+    "Password": "123456",
+    "Action": "FinishDish",
+    "DishName": "Phở bò tái",
+    "ExpectedResult": "Hoàn thành",
+    "SheetName": "Test Case (Đầu bếp)"
+  },
+  {
+    "TestCaseID": "TC_FULL_01",
+    "Username": "minhtri@gmail.com",
+    "Password": "123456",
+    "Action": "FullProcessOrder",
+    "ExpectedResult": "Hoàn thành",
+    "SheetName": "Test Case (Đầu bếp)"
+  }
+]

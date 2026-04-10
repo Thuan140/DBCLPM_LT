@@ -1,22 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\BaoDamChatLuongPM\\LT\\RestaurantAutomation\\",
+  "WorkspaceRootPath": "C:\\B\u0110CLPM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\baodamchatluongpm\\lt\\restaurantautomation\\restaurantautomation\\tests\\createtabletests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\b\u0111clpm\\restaurantautomation\\tests\\cheftests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\tests\\cheftests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\b\u0111clpm\\restaurantautomation\\pages\\chefpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\pages\\chefpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\b\u0111clpm\\restaurantautomation\\testdata\\chefdata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\testdata\\chefdata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\b\u0111clpm\\restaurantautomation\\tests\\createtabletests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\tests\\createtabletests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\baodamchatluongpm\\lt\\restaurantautomation\\restaurantautomation\\testdata\\tabledata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\b\u0111clpm\\restaurantautomation\\utilities\\excelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\utilities\\excelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|C:\\B\u0110CLPM\\restaurantautomation\\utilities\\capturehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\utilities\\capturehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\b\u0111clpm\\restaurantautomation\\testdata\\logindata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\testdata\\logindata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\b\u0111clpm\\restaurantautomation\\tests\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\tests\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|C:\\B\u0110CLPM\\restaurantautomation\\testdata\\tabledata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\testdata\\tabledata.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\baodamchatluongpm\\lt\\restaurantautomation\\restaurantautomation\\pages\\tablemanagementpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\pages\\tablemanagementpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\b\u0111clpm\\restaurantautomation\\pages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\pages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|c:\\baodamchatluongpm\\lt\\restaurantautomation\\restaurantautomation\\utilities\\capturehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\utilities\\capturehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|C:\\B\u0110CLPM\\restaurantautomation\\pages\\tablemanagementpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6079F23-D8E5-4407-9690-F3BD1528B9E1}|RestaurantAutomation\\RestaurantAutomation.csproj|solutionrelative:restaurantautomation\\pages\\tablemanagementpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,28 +54,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TableData.json",
-              "DocumentMoniker": "C:\\BaoDamChatLuongPM\\LT\\RestaurantAutomation\\RestaurantAutomation\\TestData\\TableData.json",
-              "RelativeDocumentMoniker": "RestaurantAutomation\\TestData\\TableData.json",
-              "ToolTip": "C:\\BaoDamChatLuongPM\\LT\\RestaurantAutomation\\RestaurantAutomation\\TestData\\TableData.json",
-              "RelativeToolTip": "RestaurantAutomation\\TestData\\TableData.json",
-              "ViewState": "AgIAABAAAAAAAAAAAAAUwCAAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-10T02:52:10.165Z",
+              "Title": "ChefPage.cs",
+              "DocumentMoniker": "C:\\B\u0110CLPM\\RestaurantAutomation\\Pages\\ChefPage.cs",
+              "RelativeDocumentMoniker": "RestaurantAutomation\\Pages\\ChefPage.cs",
+              "ToolTip": "C:\\B\u0110CLPM\\RestaurantAutomation\\Pages\\ChefPage.cs",
+              "RelativeToolTip": "RestaurantAutomation\\Pages\\ChefPage.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwEYAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T14:26:05.465Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ChefTests.cs",
+              "DocumentMoniker": "C:\\B\u0110CLPM\\RestaurantAutomation\\Tests\\ChefTests.cs",
+              "RelativeDocumentMoniker": "RestaurantAutomation\\Tests\\ChefTests.cs",
+              "ToolTip": "C:\\B\u0110CLPM\\RestaurantAutomation\\Tests\\ChefTests.cs",
+              "RelativeToolTip": "RestaurantAutomation\\Tests\\ChefTests.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAD8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T13:41:38.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChefData.json",
+              "DocumentMoniker": "C:\\B\u0110CLPM\\RestaurantAutomation\\TestData\\ChefData.json",
+              "RelativeDocumentMoniker": "RestaurantAutomation\\TestData\\ChefData.json",
+              "ToolTip": "C:\\B\u0110CLPM\\RestaurantAutomation\\TestData\\ChefData.json",
+              "RelativeToolTip": "RestaurantAutomation\\TestData\\ChefData.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-10T13:39:20.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginData.json",
+              "DocumentMoniker": "C:\\B\u0110CLPM\\RestaurantAutomation\\TestData\\LoginData.json",
+              "RelativeDocumentMoniker": "RestaurantAutomation\\TestData\\LoginData.json",
+              "ToolTip": "C:\\B\u0110CLPM\\RestaurantAutomation\\TestData\\LoginData.json",
+              "RelativeToolTip": "RestaurantAutomation\\TestData\\LoginData.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-10T12:35:52.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginTests.cs",
+              "DocumentMoniker": "C:\\B\u0110CLPM\\RestaurantAutomation\\Tests\\LoginTests.cs",
+              "RelativeDocumentMoniker": "RestaurantAutomation\\Tests\\LoginTests.cs",
+              "ToolTip": "C:\\B\u0110CLPM\\RestaurantAutomation\\Tests\\LoginTests.cs",
+              "RelativeToolTip": "RestaurantAutomation\\Tests\\LoginTests.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T12:25:21.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\B\u0110CLPM\\RestaurantAutomation\\Pages\\LoginPage.cs",
+              "RelativeDocumentMoniker": "RestaurantAutomation\\Pages\\LoginPage.cs",
+              "ToolTip": "C:\\B\u0110CLPM\\RestaurantAutomation\\Pages\\LoginPage.cs",
+              "RelativeToolTip": "RestaurantAutomation\\Pages\\LoginPage.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAiwG4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T12:25:18.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExcelHelper.cs",
+              "DocumentMoniker": "C:\\B\u0110CLPM\\RestaurantAutomation\\Utilities\\ExcelHelper.cs",
+              "RelativeDocumentMoniker": "RestaurantAutomation\\Utilities\\ExcelHelper.cs",
+              "ToolTip": "C:\\B\u0110CLPM\\RestaurantAutomation\\Utilities\\ExcelHelper.cs",
+              "RelativeToolTip": "RestaurantAutomation\\Utilities\\ExcelHelper.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T12:24:50.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CreateTableTests.cs",
-              "DocumentMoniker": "C:\\BaoDamChatLuongPM\\LT\\RestaurantAutomation\\RestaurantAutomation\\Tests\\CreateTableTests.cs",
+              "DocumentMoniker": "C:\\B\u0110CLPM\\RestaurantAutomation\\Tests\\CreateTableTests.cs",
               "RelativeDocumentMoniker": "RestaurantAutomation\\Tests\\CreateTableTests.cs",
-              "ToolTip": "C:\\BaoDamChatLuongPM\\LT\\RestaurantAutomation\\RestaurantAutomation\\Tests\\CreateTableTests.cs",
+              "ToolTip": "C:\\B\u0110CLPM\\RestaurantAutomation\\Tests\\CreateTableTests.cs",
               "RelativeToolTip": "RestaurantAutomation\\Tests\\CreateTableTests.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAjwDoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -56,26 +166,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TableManagementPage.cs",
-              "DocumentMoniker": "C:\\BaoDamChatLuongPM\\LT\\RestaurantAutomation\\RestaurantAutomation\\Pages\\TableManagementPage.cs",
-              "RelativeDocumentMoniker": "RestaurantAutomation\\Pages\\TableManagementPage.cs",
-              "ToolTip": "C:\\BaoDamChatLuongPM\\LT\\RestaurantAutomation\\RestaurantAutomation\\Pages\\TableManagementPage.cs",
-              "RelativeToolTip": "RestaurantAutomation\\Pages\\TableManagementPage.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBYAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T02:43:42.12Z",
+              "DocumentIndex": 8,
+              "Title": "TableData.json",
+              "DocumentMoniker": "C:\\B\u0110CLPM\\RestaurantAutomation\\TestData\\TableData.json",
+              "RelativeDocumentMoniker": "RestaurantAutomation\\TestData\\TableData.json",
+              "ToolTip": "C:\\B\u0110CLPM\\RestaurantAutomation\\TestData\\TableData.json",
+              "RelativeToolTip": "RestaurantAutomation\\TestData\\TableData.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-10T02:52:10.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
+              "Title": "TableManagementPage.cs",
+              "DocumentMoniker": "C:\\B\u0110CLPM\\RestaurantAutomation\\Pages\\TableManagementPage.cs",
+              "RelativeDocumentMoniker": "RestaurantAutomation\\Pages\\TableManagementPage.cs",
+              "ToolTip": "C:\\B\u0110CLPM\\RestaurantAutomation\\Pages\\TableManagementPage.cs",
+              "RelativeToolTip": "RestaurantAutomation\\Pages\\TableManagementPage.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T02:43:42.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CaptureHelper.cs",
-              "DocumentMoniker": "C:\\BaoDamChatLuongPM\\LT\\RestaurantAutomation\\RestaurantAutomation\\Utilities\\CaptureHelper.cs",
+              "DocumentMoniker": "C:\\B\u0110CLPM\\RestaurantAutomation\\Utilities\\CaptureHelper.cs",
               "RelativeDocumentMoniker": "RestaurantAutomation\\Utilities\\CaptureHelper.cs",
-              "ToolTip": "C:\\BaoDamChatLuongPM\\LT\\RestaurantAutomation\\RestaurantAutomation\\Utilities\\CaptureHelper.cs",
+              "ToolTip": "C:\\B\u0110CLPM\\RestaurantAutomation\\Utilities\\CaptureHelper.cs",
               "RelativeToolTip": "RestaurantAutomation\\Utilities\\CaptureHelper.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwBoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T02:22:50.537Z",
               "EditorCaption": ""

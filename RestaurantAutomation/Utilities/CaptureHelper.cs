@@ -10,7 +10,7 @@ namespace RestaurantAutomation.Utilities
             {
                 try
                 {
-                    string folderPath = @"C:\BaoDamChatLuongPM\LT\Screenshots\";
+                    string folderPath = @"C:\bao dam chat luong phan mem _TH\Screenshots\";
                     if (!Directory.Exists(folderPath)) Directory.CreateDirectory(folderPath);
 
                     // Lưu đúng tên: TC_RE_01.png
