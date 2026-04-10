@@ -1,0 +1,42 @@
+[
+  {
+    "TestCaseID": "TC_TABLE_03",
+    "Description": "Tạo bàn mới thành công",
+    "TableNumber": "1001",
+    "Capacity": "4",
+    "Location": "vip",
+    "Notes": "Bàn VIP mới",
+    "ExpectedResult": "thành công",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_TABLE_04",
+    "Description": "Hệ thống không cho nhập số âm",
+    "TableNumber": "-66",
+    "Capacity": "4",
+    "Location": "vip",
+    "Notes": "",
+    "ExpectedResult": "vui lòng",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_TABLE_05",
+    "Description": "Chặn tạo bàn trùng số",
+    "TableNumber": "66",
+    "Capacity": "4",
+    "Location": "vip",
+    "Notes": "",
+    "ExpectedResult": "đã tồn tại",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_TABLE_06",
+    "Description": "Để trống trường dữ liệu bắt buộc",
+    "TableNumber": "",
+    "Capacity": "",
+    "Location": "",
+    "Notes": "",
+    "ExpectedResult": "Vui lòng nhập đầy đủ thông tin bắt buộc",
+    "SheetName": "Test Case (Phục vụ)"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "TestCaseID": "TC_LOGIN_01",
+    "Description": "Xác minh nhân viên phục vụ có thể đăng nhập thành công",
+    "Username": "ngochoa@gmail.com",
+    "Password": "123456",
+    "ExpectedResult": "/dashboard",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_LOGIN_02",
+    "Description": "Xác minh hệ thống báo lỗi khi nhập mật khẩu sai",
+    "Username": "ngochoa@gmail.com",
+    "Password": "33333333",
+    "ExpectedResult": "Firebase: Error (auth/invalid-credential).",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_LOGIN_03",
+    "Description": "Xác minh hệ thống báo lỗi khi nhập sai định dạng email",
+    "Username": "ngochoa**gmail.com",
+    "Password": "33333333",
+    "ExpectedResult": "Firebase: Error (auth/invalid-email).",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_LOGIN_04",
+    "Description": "Xác minh hệ thống báo lỗi khi bỏ trống ô Tên đăng nhập",
+    "Username": "",
+    "Password": "123",
+    "ExpectedResult": "Vui lòng điền vào trường này.",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_LOGIN_05",
+    "Description": "Xác minh hệ thống báo lỗi khi bỏ trống ô Mật khẩu",
+    "Username": "ngochoa@gmail.com",
+    "Password": "",
+    "ExpectedResult": "Vui lòng điền vào trường này.",
+    "SheetName": "Test Case (Phục vụ)"
+  }
+]
