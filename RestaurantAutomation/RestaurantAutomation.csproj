@@ -174,9 +174,11 @@
   <ItemGroup>
     <Compile Include="Pages\ChefPage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
+    <Compile Include="Pages\OrderPage.cs" />
     <Compile Include="Pages\TableManagementPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\ChefTests.cs" />
+    <Compile Include="Tests\CreateOrderTests.cs" />
     <Compile Include="Tests\LoginTests.cs" />
     <Compile Include="Tests\CreateTableTests.cs" />
     <Compile Include="Utilities\CaptureHelper.cs" />
@@ -191,6 +193,7 @@
     <None Include="TestData\LoginData.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="TestData\OrderData.json" />
     <None Include="TestData\TableData.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

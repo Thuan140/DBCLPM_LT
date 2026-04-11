@@ -1,0 +1,101 @@
+[
+  {
+    "TestCaseID": "TC_ORDER_01",
+    "Description": "Tạo Order thành công cho bàn trống",
+    "TableNumber": "-0586598",
+    "Action": "create",
+    "MenuItems": [ "Phở bò tái", "Trà đào cam sả" ],
+    "OrderNotes": "Phở không hành",
+    "ExpectedResult": "thành công",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_ORDER_02",
+    "Description": "Kiểm tra hủy Order khi đang chọn món",
+    "TableNumber": "-10",
+    "Action": "cancel",
+    "MenuItems": [ "Cơm gà xối mỡ" ],
+    "OrderNotes": "Test hủy",
+    "ExpectedResult": "cancel",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+
+    "TestCaseID": "TC_ORDER_03",
+    "Description": "Tạo Order với danh sách món ăn dài (Kiểm tra scroll)",
+    "TableNumber": "-10",
+    "MenuItems": [ "Phở bò tái", "Cơm gà xối mỡ", "Bánh flan", "Trà đào cam sả", "Phở" ],
+    "OrderNotes": "Giao tất cả cùng lúc",
+    "ExpectedResult": "thành công",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+
+  {
+
+    "TestCaseID": "TC_ORDER_04",
+
+    "Description": "Tạo Order nhưng không nhập ghi chú",
+
+    "TableNumber": "5",
+
+    "MenuItems": [ "Cơm gà xối mỡ" ],
+
+    "OrderNotes": "",
+
+    "ExpectedResult": "thành công",
+
+    "SheetName": "Test Case (Phục vụ)"
+
+  },
+  {
+    "TestCaseID": "TC_ORDER_05",
+    "Description": "Kiểm tra nút Tạo Order bị khóa khi không chọn món",
+    "TableNumber": "-17",
+    "Action": "create",
+    "MenuItems": [],
+    "OrderNotes": "",
+    "ExpectedResult": "disabled",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_ORDER_06",
+    "Description": "Thêm món mới cho bàn đang phục vụ",
+    "TableNumber": "-0586598",
+    "Action": "add_food",
+    "MenuItems": [ "Phở bò tái" ],
+    "OrderNotes": "Thêm món sau",
+    "ExpectedResult": "Order đã được tạo thành công!",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_ORDER_07",
+    "Description": "Xác nhận dọn bàn xong (Hoàn tất phục vụ)",
+    "TableNumber": "-0586598",
+    "Action": "finish",
+    "MenuItems": [],
+    "OrderNotes": "",
+    "ExpectedResult": "Bàn đã được dọn!",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_ORDER_08",
+    "Description": "Sử dụng nút Gọi phục vụ",
+    "TableNumber": "-10",
+    "Action": "call_staff",
+    "MenuItems": [],
+    "OrderNotes": "",
+    "ExpectedResult": "Đã gọi phục vụ!",
+    "SheetName": "Test Case (Phục vụ)"
+  },
+  {
+    "TestCaseID": "TC_ORDER_09",
+    "Description": "Cưỡng chế dọn bàn (Force Clean)",
+    "TableNumber": "-10",
+    "Action": "force_clean",
+    "MenuItems": [],
+    "OrderNotes": "",
+    "ExpectedResult": "Thực tế: Bàn đã được dọn (Force)!",
+    "SheetName": "Test Case (Phục vụ)"
+  }
+
+]

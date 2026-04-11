@@ -25,7 +25,7 @@ namespace RestaurantAutomation.Pages
         // --- Locators Đăng xuất (Dropdown) ---
         private By btnUserMenu = By.CssSelector(".btn.btn-link.p-0.text-dark");
         private By btnLogoutItem = By.CssSelector(".dropdown-item.text-danger");
-
+        private By btnDirectLogout = By.Id("logoutButton");
         // --- Hành động Đăng nhập ---
         public void Login(string user, string pass)
         {
@@ -48,8 +48,10 @@ namespace RestaurantAutomation.Pages
         {
             try
             {
-                // Nếu URL chứa dashboard hoặc tìm thấy nút Menu User thì coi như đã vào trong
-                return driver.Url.Contains("dashboard") || driver.FindElements(btnUserMenu).Count > 0;
+                // Đã đăng nhập nếu: URL chứa dashboard HOẶC thấy nút menu (Phục vụ) HOẶC thấy nút logout trực tiếp (Đầu bếp)
+                return driver.Url.Contains("dashboard") ||
+                       driver.FindElements(btnUserMenu).Count > 0 ||
+                       driver.FindElements(btnDirectLogout).Count > 0;
             }
             catch { return false; }
         }
@@ -59,34 +61,45 @@ namespace RestaurantAutomation.Pages
         {
             try
             {
-                // Bước 1: Click vào menu để hiện dropdown
-                IWebElement userMenu = wait.Until(ExpectedConditions.ElementToBeClickable(btnUserMenu));
-                userMenu.Click();
+                // Kiểm tra xem có nút đăng xuất trực tiếp (Đầu bếp/Thu ngân) không
+                var directLogoutElements = driver.FindElements(btnDirectLogout);
 
-                // Bước 2: Click nút Đăng xuất (dropdown item)
-                IWebElement logoutBtn = wait.Until(ExpectedConditions.ElementToBeClickable(btnLogoutItem));
-                logoutBtn.Click();
+                if (directLogoutElements.Count > 0 && directLogoutElements[0].Displayed)
+                {
+                    // CASE 1: Role Đầu bếp/Thu ngân - Click trực tiếp
+                    Console.WriteLine("Phát hiện nút đăng xuất trực tiếp (Đầu bếp/Thu ngân).");
+                    IWebElement directBtn = wait.Until(ExpectedConditions.ElementToBeClickable(btnDirectLogout));
+                    directBtn.Click();
+                }
+                else
+                {
+                    // CASE 2: Role Phục vụ - Click dropdown menu trước
+                    Console.WriteLine("Sử dụng quy trình đăng xuất 2 bước (Phục vụ).");
+                    IWebElement userMenu = wait.Until(ExpectedConditions.ElementToBeClickable(btnUserMenu));
+                    userMenu.Click();
 
-                // Bước 3: Xử lý thông báo "Bạn có chắc chắn muốn đăng xuất?"
-                // Đợi Alert xuất hiện trong tối đa 5 giây
-                wait.Until(ExpectedConditions.AlertIsPresent());
+                    IWebElement logoutBtn = wait.Until(ExpectedConditions.ElementToBeClickable(btnLogoutItem));
+                    logoutBtn.Click();
+                }
 
-                // Chuyển hướng điều khiển sang Alert và nhấn OK (Accept)
-                IAlert alert = driver.SwitchTo().Alert();
-                Console.WriteLine("Thông báo xuất hiện: " + alert.Text);
-                alert.Accept();
+                // Bước chung: Xử lý Alert xác nhận (nếu có)
+                try
+                {
+                    wait.Until(ExpectedConditions.AlertIsPresent());
+                    IAlert alert = driver.SwitchTo().Alert();
+                    Console.WriteLine("Chấp nhận Alert: " + alert.Text);
+                    alert.Accept();
+                }
+                catch (WebDriverTimeoutException)
+                {
+                    Console.WriteLine("Không có Alert xác nhận, tiếp tục...");
+                }
 
-                // Đợi một chút để hệ thống xóa session và chuyển trang
-                Thread.Sleep(1000);
-            }
-            catch (NoAlertPresentException)
-            {
-                Console.WriteLine("Không tìm thấy thông báo xác nhận đăng xuất.");
+                Thread.Sleep(1500);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Lỗi khi logout: " + ex.Message);
-                // Phòng hờ nếu kẹt thì xóa sạch cookie và về trang chủ
                 driver.Manage().Cookies.DeleteAllCookies();
                 driver.Navigate().GoToUrl("https://digisin-27mb.vercel.app/index.html");
             }

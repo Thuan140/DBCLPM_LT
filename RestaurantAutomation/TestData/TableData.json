@@ -2,7 +2,7 @@
   {
     "TestCaseID": "TC_TABLE_03",
     "Description": "Tạo bàn mới thành công",
-    "TableNumber": "1001",
+    "TableNumber": "  ",
     "Capacity": "4",
     "Location": "vip",
     "Notes": "Bàn VIP mới",

@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
+using System.Threading;
 
 namespace RestaurantAutomation.Pages
 {
@@ -15,13 +16,24 @@ namespace RestaurantAutomation.Pages
             this.driver = driver;
             this.wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
-        
+
 
         // --- Locators trong Form Tạo bàn ---
         private By txtTableNumber = By.Id("tableNumber");
         private By drpCapacity = By.Id("tableCapacity");
         private By drpLocation = By.Id("tableLocation");
         private By txtNotes = By.Id("tableNotes");
+        // Locator cho các nút trong Modal Thao tác bàn
+        private By btnFinishTable = By.XPath("//button[contains(., 'Dọn bàn xong')]");
+        private By btnAddMoreFood = By.XPath("//button[contains(., 'Thêm món')]");
+        private By btnForceClean = By.XPath("//button[contains(., 'Force Clean')]");
+        private By btnCallStaff = By.XPath("//button[contains(., 'Gọi phục vụ')]");
+
+        // Các hàm thao tác
+        public void ClickFinishTable() => wait.Until(ExpectedConditions.ElementToBeClickable(btnFinishTable)).Click();
+        public void ClickAddMoreFood() => wait.Until(ExpectedConditions.ElementToBeClickable(btnAddMoreFood)).Click();
+        public void ClickForceClean() => wait.Until(ExpectedConditions.ElementToBeClickable(btnForceClean)).Click();
+        public void ClickCallStaff() => wait.Until(ExpectedConditions.ElementToBeClickable(btnCallStaff)).Click();
         // Nút mở Form (có icon plus, nằm ngoài danh sách)
         private By btnOpenCreateForm = By.XPath("//button[contains(@onclick, 'showCreateTableModal')]");
 
@@ -86,6 +98,61 @@ namespace RestaurantAutomation.Pages
             }
         }
 
+        public void ClickTableByNumber(string tableNumber)
+        {
+            // Tìm thẻ div có class table-number mà chứa số bàn từ JSON
+            // XPath này sẽ tìm bàn dựa trên phần số (ví dụ: -0586598) nằm trong chữ "Bàn -0586598"
+            string xpath = $"//div[contains(@class, 'table-number') and contains(text(), '{tableNumber}')]";
+
+            try
+            {
+                // Đợi bàn xuất hiện và cuộn tới nó
+                IWebElement tableNumElem = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(xpath)));
+
+                // Leo lên thẻ cha (table-card) để click
+                IWebElement tableCard = tableNumElem.FindElement(By.XPath("./.."));
+
+                ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView({block: 'center'});", tableCard);
+                Thread.Sleep(500);
+                ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", tableCard);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Không tìm thấy bàn có số: {tableNumber}. Lỗi: {ex.Message}");
+            }
+        }
+        public void WaitForDataToRender()
+        {
+            // Đợi tối đa 30 giây
+            WebDriverWait longWait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+
+            try
+            {
+                // Điều kiện: Đợi cho đến khi thẻ div#tablesGrid chứa ít nhất 1 bàn (table-card)
+                // Và bàn đó phải có text (không bị rỗng số bàn)
+                longWait.Until(d => {
+                    var tables = d.FindElements(By.ClassName("table-card"));
+                    if (tables.Count > 0)
+                    {
+                        // Kiểm tra xem bàn đầu tiên đã hiện số bàn chưa (tránh trường hợp hiện khung nhưng rỗng chữ)
+                        string tableText = tables[0].Text.Trim();
+                        return !string.IsNullOrEmpty(tableText);
+                    }
+                    return false;
+                });
+
+                Console.WriteLine("---> Dữ liệu đã lên đầy đủ!");
+            }
+            catch (WebDriverTimeoutException)
+            {
+                // Nếu đơ quá lâu, thay vì Refresh, hãy thử click vào nút "Quản lý bàn" 
+                // ở sidebar để kích hoạt lại hàm load dữ liệu của web
+                Console.WriteLine("---> Dữ liệu vẫn trống, thử kích hoạt lại sidebar...");
+                IWebElement menuTable = driver.FindElement(By.XPath("//span[contains(text(), 'Quản lý bàn')]"));
+                menuTable.Click();
+                Thread.Sleep(3000);
+            }
+        }
         // Lấy thông báo lỗi từ Validation HTML5 hoặc thông báo Toast (nếu có)
         public string GetValidationMessage()
         {

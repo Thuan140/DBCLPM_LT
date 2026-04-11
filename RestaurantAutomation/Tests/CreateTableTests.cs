@@ -26,7 +26,7 @@ namespace RestaurantAutomation.Tests
         public void Setup()
         {
             ChromeOptions options = new ChromeOptions();
-            
+
             options.AddUserProfilePreference("credentials_enable_service", false);
             options.AddUserProfilePreference("profile.password_manager_enabled", false);
             options.AddUserProfilePreference("profile.password_manager_leak_detection", false);
