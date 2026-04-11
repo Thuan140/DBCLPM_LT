@@ -1,0 +1,42 @@
+[
+  {
+    "TestCaseID": "TC_PAYMENT_01",
+    "Username": "thanhhieu@gmail.com",
+    "Password": "123456",
+    "Action": "ViewPaymentList",
+    "ExpectedResult": "Hóa đơn chờ thanh toán",
+    "SheetName": "Test Case (Casher)"
+  },
+  {
+    "TestCaseID": "TC_PAYMENT_02",
+    "Username": "thanhhieu@gmail.com",
+    "Password": "123456",
+    "Action": "ProcessPayment",
+    "ExpectedResult": "Thanh toán thành công",
+    "SheetName": "Test Case (Casher)"
+  },
+  {
+    "TestCaseID": "TC_HISTORY_01",
+    "Username": "thanhhieu@gmail.com",
+    "Password": "123456",
+    "Action": "ViewHistory",
+    "ExpectedResult": "Lịch sử thanh toán",
+    "SheetName": "Test Case (Casher)"
+  },
+  {
+    "TestCaseID": "TC_HISTORY_02",
+    "Username": "thanhhieu@gmail.com",
+    "Password": "123456",
+    "Action": "ViewHistoryDetail",
+    "ExpectedResult": "Chi tiết hóa đơn",
+    "SheetName": "Test Case (Casher)"
+  },
+  {
+    "TestCaseID": "TC_DASH_01",
+    "Username": "thanhhieu@gmail.com",
+    "Password": "123456",
+    "Action": "ViewDashboard",
+    "ExpectedResult": "Tổng doanh thu",
+    "SheetName": "Test Case (Casher)"
+  }
+]

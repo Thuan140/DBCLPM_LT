@@ -1,6 +1,41 @@
 [
   {
     "TestCaseID": "TC_LOGIN_01",
+    "Description": "Đăng nhập thành công với tài khoản Casher",
+    "Username": "thanhhieu@gmail.com",
+    "Password": "123456",
+    "ExpectedResult": "/cashier-dashboard",
+    "SheetName": "Test Case (Casher)"
+  },
+  {
+    "TestCaseID": "TC_LOGIN_02",
+    "Description": "Đăng nhập thất bại do sai mật khẩu",
+    "Username": "thanhhieu@gmail.com",
+    "Password": "123",
+    "ExpectedResult": "Firebase: Error (auth/invalid-credential).",
+    "SheetName": "Test Case (Casher)"
+  },
+  {
+    "TestCaseID": "TC_LOGIN_03",
+    "Description": "Bỏ trống email",
+    "Username": "",
+    "Password": "123456",
+    "ExpectedResult": "Please fill out this field",
+    "SheetName": "Test Case (Casher)"
+  },
+  {
+    "TestCaseID": "TC_LOGIN_04",
+    "Description": "Bỏ trống password",
+    "Username": "quocminh@gmail.com",
+    "Password": "",
+    "ExpectedResult": "Please fill out this field",
+    "SheetName": "Test Case (Casher)"
+  },
+
+
+
+  {
+    "TestCaseID": "TC_LOGIN_01",
     "Description": "Xác minh nhân viên phục vụ có thể đăng nhập thành công",
     "Username": "ngochoa@gmail.com",
     "Password": "123456",
@@ -39,6 +74,10 @@
     "ExpectedResult": "Vui lòng điền vào trường này.",
     "SheetName": "Test Case (Phục vụ)"
   },
+
+
+
+
   {
     "TestCaseID": "TC_LOGIN_01",
     "Description": "Xác minh nhân viên phục vụ có thể đăng nhập thành công",

@@ -172,11 +172,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\CasherPage.cs" />
     <Compile Include="Pages\ChefPage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Pages\OrderPage.cs" />
     <Compile Include="Pages\TableManagementPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\CasherTests.cs" />
     <Compile Include="Tests\ChefTests.cs" />
     <Compile Include="Tests\CreateOrderTests.cs" />
     <Compile Include="Tests\LoginTests.cs" />
@@ -194,6 +196,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="TestData\OrderData.json" />
+    <None Include="TestData\CasherData.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="TestData\TableData.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
